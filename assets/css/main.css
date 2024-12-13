@@ -71,6 +71,21 @@ body {
   object-fit: cover; /* Remplissage de l'espace sans distorsion */
 }
 
+
+
+.product-section .card-img-top {
+  object-fit: cover; /* Les images remplissent l'espace tout en gardant leur proportion */
+  width: 100%; /* Les images prennent toute la largeur du conteneur */
+  height: 200px; /* Hauteur fixe pour toutes les images */
+  border-radius: 5px; /* Ajoute des bords arrondis pour plus d'esthétique */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
+  transition: transform 0.3s ease-in-out; /* Animation lors du survol */
+}
+
+.product-section .card-img-top:hover {
+  transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
