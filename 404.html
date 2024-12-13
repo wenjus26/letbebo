@@ -3,23 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page non trouvée</title>
+  <title>404 - Page non trouvée</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
       text-align: center;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f9fa;
-      color: #333;
+      margin-top: 50px;
     }
     h1 {
-      font-size: 50px;
-      margin-top: 20%;
+      font-size: 4rem;
+      color: #ff6347;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .gif-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .gif-container img {
+      width: 100%;
+      max-width: 500px;
     }
     a {
+      font-size: 1.2rem;
       color: #007bff;
       text-decoration: none;
+      margin-top: 20px;
+      display: inline-block;
     }
     a:hover {
       text-decoration: underline;
@@ -28,7 +41,14 @@
 </head>
 <body>
   <h1>404 - Page non trouvée</h1>
-  <p>Désolé, la page que vous recherchez n'existe pas.</p>
-  <p><a href="index.html">Retour à l'accueil</a></p>
+  <p>Oups ! La page que vous recherchez n'existe pas.</p>
+  
+  <!-- Dessin animé (GIF) -->
+  <div class="gif-container">
+    <img src="https://media.giphy.com/media/10pP9zXJbeINgm/giphy.gif" alt="Animation 404">
+  </div>
+
+  <p><a href="/">Retour à l'accueil</a></p>
+  
 </body>
 </html>
