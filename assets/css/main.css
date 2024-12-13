@@ -66,6 +66,11 @@ body {
   font-family: var(--default-font);
 }
 
+.custom-img {
+  height: 300px; /* Hauteur uniforme */
+  object-fit: cover; /* Remplissage de l'espace sans distorsion */
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
