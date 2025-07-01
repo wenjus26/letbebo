@@ -1,1063 +1,1041 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Home-Benin Organics</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
- 
-
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benin Organics | Leader in African Organic Soybean Processing | Organic Soybean Oil, Organic Meal</title>
+    <meta name="description" content="Benin Organics is Africa's leading processor of USDA and EU certified organic soybeans. Discover our organic soybean oil and organic meal products, our 60,000 t/year capacity, full traceability, and social impact with 25,000 farmers. Your ideal partner for B2B and international investors.">
+    <meta name="keywords" content="organic soybean oil, organic soybean meal, African soy processing, Benin soy export, certified organic soy, USDA organic, EU organic, sustainable agriculture, food traceability, agricultural investment Africa, GDIZ Benin, B2B organic agricultural products">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .testimonial-slide {
+            display: none;
+        }
+        .testimonial-slide.active {
+            display: block;
+            animation: slideIn 0.5s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .timeline-item:not(:last-child):after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 20px;
+            background-color: #539D5C;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content.active {
+            max-height: 500px;
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
 </head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo_bo.png" alt="">
-        <h1 class="sitename"></h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Acceuil</a></li>
-          <li class="dropdown"><a href="#"><span>À Propos</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="histoire.html">Notre Histoire</a></li>
-              <li><a href="mission.html">Mission & Vision</a></li>
-            </ul>
-          </li>    
-          <li><a href="product.html">Nos Produits</a></li>
-
-        
-          <li class="dropdown"><a href="#"><span>Blog</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="company.html">Company News</a></li>
-              <li><a href="ressource.html">Ressources</a></li>
-            </ul>
-          </li>      
-          <li class="dropdown"><a href="#"><span>Careers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Job Openings</a></li>
-              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
--->
-              <li><a href="#">Why Work With Us</a></li>
-              <li><a href="#">Internships and Training</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
-
-    </div>
-  </header>
-
-  <main class="main">
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/img/logo_bo.png" alt="Benin Organics Logo" class="h-10 mr-3">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-green-600 font-medium">Home</a>
+                <a href="#about" class="hover:text-green-600">About</a>
+                <a href="#products" class="hover:text-green-600">Products</a>
+                <a href="#impact" class="hover:text-green-600">Impact</a>
+                <a href="#contact" class="hover:text-green-600">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-green-600 font-medium">Home</a>
+            <a href="#about" class="block py-2 hover:text-green-600">About</a>
+            <a href="#products" class="block py-2 hover:text-green-600">Products</a>
+            <a href="#impact" class="block py-2 hover:text-green-600">Impact</a>
+            <a href="#contact" class="block py-2 hover:text-green-600">Contact</a>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-<!-- Hero Section -->
-  <section id="hero" class="hero section">
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-            <div class="company-badge mb-4">
-              <i class="bi bi-leaf me-2"></i>
-              Engagés pour votre bien-être
+    <section id="home" class="relative bg-gray-100 py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="flex items-center mb-4">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full mr-2">USDA Organic</span>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">EU Organic</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Harnessing the Excellence of African Organic Soy: <span class="text-green-600">Your Reliable Industrial Partner.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Benin Organics is the pioneer in organic soybean processing in Africa, offering a comprehensive range of USDA and EU certified products. From our fields to your factory, we guarantee superior quality, impeccable traceability, and a deep commitment to a sustainable future.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#products" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                        Discover Our B2B Solutions
+                    </a>
+                    <a href="#" class="border-2 border-green-600 text-green-600 hover:bg-green-50 font-bold py-3 px-6 rounded-lg text-center transition duration-300">
+                        Download Investor Brochure
+                    </a>
+                </div>
             </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/600x400" alt="Organic Soybean Processing" class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
 
-            <h1 class="mb-4">
-             Valorisons le Soya  <br>
-              Bio pour un Avenir Durable <br>
-              <span class="accent-text">Avec Benin Organics</span>
-            </h1>
- 
-            <p class="mb-4 mb-md-5">
-              Nos produits finis sont issus de l'agriculture biologique, principalement des fruits de soja cultivés au Bénin. Nous croyons en une agriculture durable, où chaque produit est cultivé dans le respect de l'environnement pour offrir à nos clients le meilleur de la nature.
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-lg bg-green-50">
+                    <div class="text-3xl font-bold text-green-600 mb-2">5x</div>
+                    <h3 class="font-semibold mb-2">International Certifications</h3>
+                    <p class="text-gray-600 text-sm">Our practices and products are rigorously certified to meet the strictest global standards.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg bg-green-50">
+                    <div class="text-3xl font-bold text-green-600 mb-2">60K</div>
+                    <h3 class="font-semibold mb-2">Tons/Year Capacity</h3>
+                    <p class="text-gray-600 text-sm">Industrial processing capacity to meet global demand for organic soybean oil and organic meal.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg bg-green-50">
+                    <div class="text-3xl font-bold text-green-600 mb-2">25K</div>
+                    <h3 class="font-semibold mb-2">Farmer Partners</h3>
+                    <p class="text-gray-600 text-sm">A strong commitment to communities, boosting the local economy and ensuring a robust supply chain.</p>
+                </div>
+                <div class="text-center p-6 rounded-lg bg-green-50">
+                    <div class="text-3xl font-bold text-green-600 mb-2">GDIZ</div>
+                    <h3 class="font-semibold mb-2">Strategic Location</h3>
+                    <p class="text-gray-600 text-sm">Located in the Glo-Djigbé Industrial Zone (GDIZ) in Benin, we benefit from optimized logistics for export.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-4">Benin Organics: Innovation Driving Organic Soybean Processing in Africa.</h2>
+                    <p class="text-gray-600 mb-6">
+                        At Benin Organics, we are redefining organic agriculture in Africa. Our business model integrates sustainable organic soy production with a fully traceable value chain, from farm to high-quality finished products. We are your strategic partner for sourcing premium, reliable, and ethical organic ingredients.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Quality & Certifications: 100% Certified Organic Soy (USDA, EU)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Traceability & Transparency: From Seed to Finished Product</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Sustainability & Positive Impact: Ethical and Environmental Value Chain</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Capacity & Reliability: Industrial Production for Global Markets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Innovation & Expertise: Optimization of Processing Methods</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Local Partnership: Supporting 25,000 Beninese Farmers</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="https://via.placeholder.com/600x400" alt="Benin Organics Processing Facility" class="rounded-lg shadow-xl w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-award text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold">Organic Processing Expertise</p>
+                                <p class="text-sm text-gray-600">Years of Operational Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CEO Box -->
+            <div class="mt-16 bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/4 mb-6 md:mb-0 flex justify-center">
+                        <img src="https://via.placeholder.com/150x150" alt="Rejuste WENOUMI" class="rounded-full h-32 w-32 object-cover border-4 border-green-100">
+                    </div>
+                    <div class="md:w-3/4 md:pl-8">
+                        <h3 class="text-xl font-bold">Rejuste WENOUMI</h3>
+                        <p class="text-green-600 mb-4">Founder & CEO</p>
+                        <p class="italic mb-4">"Our vision: transforming Benin's agricultural potential into global organic solutions."</p>
+                        <div class="bg-green-50 p-4 rounded-lg">
+                            <p class="font-semibold">Sales Department: +229 01 21 123 456</p>
+                            <p class="text-sm">Contact us for partnership opportunities and investment inquiries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Tabs Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Commitments: Excellence, Sustainability, Impact.</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Benin Organics is built on strong pillars that ensure the quality of our products and the strength of our partnerships. Discover our competitive advantages that make us the preferred choice for your organic soy needs.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap border-b border-gray-200 mb-8">
+                    <button class="tab-button px-6 py-3 font-medium text-gray-600 hover:text-green-600 border-b-2 border-transparent hover:border-green-500 transition duration-300 active" data-tab="tab1">
+                        Certified Processing
+                    </button>
+                    <button class="tab-button px-6 py-3 font-medium text-gray-600 hover:text-green-600 border-b-2 border-transparent hover:border-green-500 transition duration-300" data-tab="tab2">
+                        Sustainability
+                    </button>
+                    <button class="tab-button px-6 py-3 font-medium text-gray-600 hover:text-green-600 border-b-2 border-transparent hover:border-green-500 transition duration-300" data-tab="tab3">
+                        Socio-Economic Impact
+                    </button>
+                </div>
+                
+                <div class="tab-content active" id="tab1">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                            <h3 class="text-2xl font-bold mb-4">Excellence in Certified Organic Soy Processing</h3>
+                            <p class="text-gray-600 mb-6">
+                                Our state-of-the-art facility processes Benin's organic soybeans into superior quality finished products, meeting the strictest international standards (USDA Organic, EU Organic). Every step is controlled to ensure purity and nutritional value.
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Organic Soybean Oil and Organic Meal: Unmatched Purity.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Certified and Controlled Processing.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Technological Innovation for Quality.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://via.placeholder.com/600x400" alt="Certified Organic Processing" class="rounded-lg shadow-lg w-full">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab2">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                            <h3 class="text-2xl font-bold mb-4">Sustainable Practices, Comprehensive Traceability</h3>
+                            <p class="text-gray-600 mb-6">
+                                From seed selection to final packaging, we ensure full traceability of our products. Our sustainable agricultural practices protect the environment, enrich the soil, and guarantee responsible production.
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>100% Traceable Sourcing from Local Farms.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Reduced Carbon Footprint and Responsible Resource Management.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Fair Partnerships with Our 25,000 Farmers.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://via.placeholder.com/600x400" alt="Sustainable Practices" class="rounded-lg shadow-lg w-full">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab3">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                            <h3 class="text-2xl font-bold mb-4">Boosting Local Economy, Serving Global Markets</h3>
+                            <p class="text-gray-600 mb-6">
+                                Benin Organics is a driver of local development, creating opportunities for thousands of farmers. Our strategic positioning in GDIZ facilitates the export of our organic products to international markets, offering a reliable and impactful supply solution.
+                            </p>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Direct Contribution to Benin's Rural Economy.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Privileged Access to GDIZ Export Infrastructure.</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                    <span>Growth Partner for Global Investors and Buyers.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://via.placeholder.com/600x400" alt="Socio-Economic Impact" class="rounded-lg shadow-lg w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Cards Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Why Choose Benin Organics?</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Discover the pillars of our commitment and the tangible benefits of our partnerships.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-award text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Sustainable Methods & Innovation</h3>
+                    <p class="text-gray-600 text-center">
+                        We integrate the latest innovations in sustainable agriculture and processing methods to minimize our environmental footprint and maximize quality.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-certificate text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">USDA & EU Certified Quality</h3>
+                    <p class="text-gray-600 text-center">
+                        Our organic soybean products comply with the most stringent certifications, guaranteeing globally recognized purity and food safety.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-hands-helping text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Social Impact Partnerships</h3>
+                    <p class="text-gray-600 text-center">
+                        Committed to 25,000 farmers, we foster inclusive economic development and strengthen local communities in Benin.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-search text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Full Traceability & Reliability</h3>
+                    <p class="text-gray-600 text-center">
+                        A transparent and controlled supply chain ensures the traceability of every product, from farm to your factory, for complete confidence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Benin Organics: Your Strategic Partner for a Prosperous Organic Future.</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">
+                Whether you are looking for a reliable source of certified organic soybean oil or organic meal, or an investment opportunity in African organic agriculture, Benin Organics is your solution. Contact us to discuss your needs and build a lasting partnership.
             </p>
-
-            <div class="hero-buttons">
-              <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">En savoir plus</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
-                <i class="bi bi-play-circle me-1"></i>
-                Voir la vidéo
-              </a>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contact" class="bg-white hover:bg-gray-100 text-green-700 font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Request a Personalized Quote
+                </a>
+                <a href="#" class="border-2 border-white hover:bg-green-600 font-bold py-3 px-8 rounded-lg transition duration-300">
+                    Explore Investment Opportunities
+                </a>
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="col-lg-6">
-          <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-            <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid">
-            <div class="customers-badge">
-              <div class="customer-avatars">
-                <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
-                <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
-                <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
-                <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
-                <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
-                <span class="avatar more">12+</span>
-              </div>
-              <p class="mb-0 mt-2">Plus de 345 clients satisfaits dans le monde entier</p>
+    <!-- Timeline Section -->
+    <section id="evolution" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Growth: From Cultivation to Industrial Innovation.</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Discover the key stages of our development, illustrating our transition from local agriculture to state-of-the-art industrial processing capacity, all while upholding our original values.
+                </p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
-        <div class="col-lg-3 col-md-6">
-          <div class="stat-item">
-            <div class="stat-icon">
-              <i class="bi bi-trophy"></i>
-            </div>
-            <div class="stat-content">
-              <h4>5x Prix Organique</h4>
-              <p class="mb-0">Prix pour la qualité de nos produits biologiques</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="stat-item">
-            <div class="stat-icon">
-              <i class="bi bi-briefcase"></i>
-            </div>
-            <div class="stat-content">
-              <h4>10k+ Produits Vendu</h4>
-              <p class="mb-0">Des produits durables et biologiques appréciés par nos clients</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="stat-item">
-            <div class="stat-icon">
-              <i class="bi bi-graph-up"></i>
-            </div>
-            <div class="stat-content">
-              <h4>150k+ Clients Satisfaits</h4>
-              <p class="mb-0">De plus en plus de consommateurs adoptent nos produits biologiques</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="stat-item">
-            <div class="stat-icon">
-              <i class="bi bi-award"></i>
-            </div>
-            <div class="stat-content">
-              <h4>4x Certifications Biologiques</h4>
-              <p class="mb-0">Nos pratiques respectent les normes les plus élevées en agriculture biologique</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- /Hero Section -->
-
-<!-- Section À propos -->
-<section id="about" class="about section">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4 align-items-center justify-content-between">
-
-      <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
-        <span class="about-meta">FAITES CONNAISSANCE AVEC NOUS</span>
-        <h2 class="about-title">Changer le Jeu de l'Agriculture Biologique</h2>
-        <p class="about-description">Nous ne nous contentons pas de cultiver – nous révolutionnons l'agriculture ! Chez Benin Organics, nous sommes engagés à fournir les produits biologiques les plus purs et les plus sains, directement du sol à votre table. Notre engagement envers la durabilité, la qualité et l'innovation fait de nous un leader dans l'industrie.</p>
-
-        <div class="row feature-list-wrapper">
-          <div class="col-md-6">
-            <ul class="feature-list">
-              <li><i class="bi bi-check-circle-fill"></i> 100% Biologique, Toujours</li>
-              <li><i class="bi bi-check-circle-fill"></i> Pratiques Durables à Chaque Étape</li>
-              <li><i class="bi bi-check-circle-fill"></i> L'Innovation Rencontre la Tradition</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="feature-list">
-              <li><i class="bi bi-check-circle-fill"></i> Emballage Écologique</li>
-              <li><i class="bi bi-check-circle-fill"></i> Commerce Équitable, Toujours</li>
-              <li><i class="bi bi-check-circle-fill"></i> Soutien aux Agriculteurs Locaux</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="info-wrapper">
-          <div class="row gy-4">
-            <div class="col-lg-5">
-              <div class="profile d-flex align-items-center gap-3">
-                <img src="assets/img/avatar-1.webp" alt="Profil du PDG" class="profile-image">
-                <div>
-                  <h4 class="profile-name">Rejuste WENOUMI</h4>
-                  <p class="profile-position">Fondateur &amp; PDG</p>
+            
+            <div class="relative max-w-4xl mx-auto">
+                <div class="timeline-item relative pb-16">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-bold mb-2">2018 - Foundation</h3>
+                                <p class="text-gray-600">
+                                    Established with a vision to transform Benin's agricultural potential into global organic solutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8">
+                            <div class="h-full flex items-center justify-center">
+                                <img src="https://via.placeholder.com/300x200" alt="Foundation" class="rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="contact-info d-flex align-items-center gap-2">
-                <i class="bi bi-telephone-fill"></i>
-                <div>
-                  <p class="contact-label">Appelez-nous</p>
-                  <p class="contact-number">+229 123 456 789</p>
+                
+                <div class="timeline-item relative pb-16">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0 order-2">
+                            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-bold mb-2">2019 - First Certifications</h3>
+                                <p class="text-gray-600">
+                                    Achieved USDA Organic and EU Organic certifications, validating our commitment to quality.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8 order-1">
+                            <div class="h-full flex items-center justify-center">
+                                <img src="https://via.placeholder.com/300x200" alt="Certifications" class="rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                
+                <div class="timeline-item relative pb-16">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0">
+                            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-bold mb-2">2020 - GDIZ Facility</h3>
+                                <p class="text-gray-600">
+                                    Established processing facility in the Glo-Djigbé Industrial Zone (GDIZ) for optimized export logistics.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8">
+                            <div class="h-full flex items-center justify-center">
+                                <img src="https://via.placeholder.com/300x200" alt="GDIZ Facility" class="rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item relative">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0 order-2">
+                            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                                <h3 class="text-xl font-bold mb-2">2023 - Expansion</h3>
+                                <p class="text-gray-600">
+                                    Reached 60,000 tons/year processing capacity and partnerships with 25,000 farmers.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8 order-1">
+                            <div class="h-full flex items-center justify-center">
+                                <img src="https://via.placeholder.com/300x200" alt="Expansion" class="rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="image-wrapper">
-          <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-            <img src="assets/img/about-5.webp" alt="Agriculture Biologique" class="img-fluid main-image rounded-4">
-            <img src="assets/img/about-2.webp" alt="Collaboration d'Équipe" class="img-fluid small-image rounded-4">
-          </div>
-          <div class="experience-badge floating">
-            <h3>3+ <span>Années</span></h3>
-            <p>Expérience en Agriculture Durable</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- /Section À propos -->
-
-
-<section id="features" class="features section">
-
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Caractéristiques</h2>
-    <p>Explorez les riches offres agricoles et les pratiques biologiques du Bénin, reconnues pour leurs solutions durables et écologiques.</p>
-  </div>
-
-  <div class="container">
-    <div class="d-flex justify-content-center">
-      <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
-        <li class="nav-item">
-          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-            <h4>Culture Biologique</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-            <h4>Pratiques Durables</h4>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-            <h4>Produits Locaux</h4>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-
-      <div class="tab-pane fade active show" id="features-tab-1">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-            <h3>Les Avantages de l'Agriculture Biologique</h3>
-            <p class="fst-italic">L'agriculture biologique au Bénin favorise des sols et des écosystèmes plus sains tout en garantissant la production d'aliments sûrs et nutritifs sans produits chimiques nocifs.</p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> Favorise la biodiversité et la santé des écosystèmes.</li>
-              <li><i class="bi bi-check2-all"></i> Réduit la pollution et la dégradation de l'environnement.</li>
-              <li><i class="bi bi-check2-all"></i> Renforce la sécurité alimentaire et la résilience face au changement climatique.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="assets/img/features-illustration-1.webp" alt="" class="img-fluid custom-img">
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-pane fade" id="features-tab-2">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-            <h3>Pratiques Agricoles Durables</h3>
-            <p class="fst-italic">Le Bénin a adopté des techniques agricoles durables telles que la rotation des cultures, l'agroforesterie et la gestion biologique des nuisibles pour protéger l'environnement.</p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> Favorise la santé des sols et réduit l'érosion.</li>
-              <li><i class="bi bi-check2-all"></i> Améliore la rétention d'eau et réduit les besoins en irrigation.</li>
-              <li><i class="bi bi-check2-all"></i> Réduit la dépendance aux engrais et pesticides synthétiques.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="assets/img/features-illustration-2.webp" alt="" class="img-fluid custom-img">
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-pane fade" id="features-tab-3">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-            <h3>Soutien aux Produits Locaux</h3>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> Soutient les agriculteurs locaux et stimule l'économie locale.</li>
-              <li><i class="bi bi-check2-all"></i> Assure des produits frais et biologiques pour la consommation locale et l'exportation.</li>
-              <li><i class="bi bi-check2-all"></i> Promeut des techniques agricoles durables et des pratiques commerciales éthiques.</li>
-            </ul>
-            <p class="fst-italic">En soutenant les agriculteurs locaux, le Bénin favorise un modèle agricole durable qui bénéficie à la fois aux producteurs et aux consommateurs.</p>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="assets/img/features-illustration-3.webp" alt="" class="img-fluid custom-img">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-
-<!-- Section des cartes de fonctionnalités -->
-<section id="features-cards" class="features-cards section">
-
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="feature-box orange">
-          <i class="bi bi-award"></i>
-          <h4>Pratiques Écologiques</h4>
-          <p>Promouvoir des pratiques agricoles respectueuses de l'environnement qui aident à préserver les ressources naturelles pour les générations futures.</p>
-        </div>
-      </div><!-- Fin de la boîte de fonctionnalité-->
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="feature-box blue">
-          <i class="bi bi-patch-check"></i>
-          <h4>Certification Biologique</h4>
-          <p>Nos produits sont certifiés biologiques, garantissant qu'aucun produit chimique nocif n'est utilisé dans le processus de culture.</p>
-        </div>
-      </div><!-- Fin de la boîte de fonctionnalité-->
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-        <div class="feature-box green">
-          <i class="bi bi-sunrise"></i>
-          <h4>Avenir Durable</h4>
-          <p>Notre objectif est de créer un modèle agricole durable qui pourra être reproduit dans la région et au-delà.</p>
-        </div>
-      </div><!-- Fin de la boîte de fonctionnalité-->
-
-      <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-        <div class="feature-box red">
-          <i class="bi bi-shield-check"></i>
-          <h4>Assurance Qualité</h4>
-          <p>Nous privilégions la qualité dans tous nos produits, garantissant à nos clients de recevoir les meilleurs produits biologiques disponibles.</p>
-        </div>
-      </div><!-- Fin de la boîte de fonctionnalité-->
-
-    </div>
-
-  </div>
-
-</section><!-- Fin de la section des cartes de fonctionnalités -->
-
-<!-- Section Appel à l'Action -->
-<section id="call-to-action" class="call-to-action section">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row content justify-content-center align-items-center position-relative">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="display-4 mb-4">Benin Organics : Croissance Durable pour un Avenir Meilleur</h2>
-        <p class="mb-4">Chez Benin Organics, nous nous engageons à promouvoir des pratiques agricoles durables. Nous fournissons des produits biologiques de haute qualité tout en assurant un impact positif sur l'environnement et les communautés locales. Rejoignez-nous dans notre mission pour une planète en meilleure santé !</p>
-        <a href="#" class="btn btn-cta">Découvrez Nos Produits</a>
-      </div>
-
-      <!-- Éléments de Fond Abstraits -->
-      <div class="shape shape-1">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path d="M47.1,-57.1C59.9,-45.6,68.5,-28.9,71.4,-10.9C74.2,7.1,71.3,26.3,61.5,41.1C51.7,55.9,35,66.2,16.9,69.2C-1.3,72.2,-21,67.8,-36.9,57.9C-52.8,48,-64.9,32.6,-69.1,15.1C-73.3,-2.4,-69.5,-22,-59.4,-37.1C-49.3,-52.2,-32.8,-62.9,-15.7,-64.9C1.5,-67,34.3,-68.5,47.1,-57.1Z" transform="translate(100 100)"></path>
-        </svg>
-      </div>
-
-      <div class="shape shape-2">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path d="M41.3,-49.1C54.4,-39.3,66.6,-27.2,71.1,-12.1C75.6,3,72.4,20.9,63.3,34.4C54.2,47.9,39.2,56.9,23.2,62.3C7.1,67.7,-10,69.4,-24.8,64.1C-39.7,58.8,-52.3,46.5,-60.1,31.5C-67.9,16.4,-70.9,-1.4,-66.3,-16.6C-61.8,-31.8,-49.7,-44.3,-36.3,-54C-22.9,-63.7,-8.2,-70.6,3.6,-75.1C15.4,-79.6,28.2,-58.9,41.3,-49.1Z" transform="translate(100 100)"></path>
-        </svg>
-      </div>
-
-      <!-- Groupes de Motifs de Points -->
-      <div class="dots dots-1">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-          </pattern>
-          <rect width="100" height="100" fill="url(#dot-pattern)"></rect>
-        </svg>
-      </div>
-
-      <div class="dots dots-2">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <pattern id="dot-pattern-2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-            <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
-          </pattern>
-          <rect width="100" height="100" fill="url(#dot-pattern-2)"></rect>
-        </svg>
-      </div>
-
-      <div class="shape shape-3">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path d="M43.3,-57.1C57.4,-46.5,71.1,-32.6,75.3,-16.2C79.5,0.2,74.2,19.1,65.1,35.3C56,51.5,43.1,65,27.4,71.7C11.7,78.4,-6.8,78.3,-23.9,72.4C-41,66.5,-56.7,54.8,-65.4,39.2C-74.1,23.6,-75.8,4,-71.7,-13.2C-67.6,-30.4,-57.7,-45.2,-44.3,-56.1C-30.9,-67,-15.5,-74,0.7,-74.9C16.8,-75.8,33.7,-70.7,43.3,-57.1Z" transform="translate(100 100)"></path>
-        </svg>
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- Fin de la section Appel à l'Action -->
-
-
-
-<!-- Évolution Section -->
-<section id="evolution" class="evolution section">
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Notre Évolution</h2>
-    
-    <!-- Carrousel Bootstrap -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-      <div class="carousel-inner">
-        <!-- Première page avec deux images -->
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-1.png" class="d-block w-100 carousel-img" alt="Évolution 1">
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">The Voice of Our Partners: Shared Trust and Success.</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Hear what our B2B clients and industrial partners say about the quality of our products, the reliability of our services, and the positive impact of our collaboration.
+                </p>
             </div>
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-2.png" class="d-block w-100 carousel-img" alt="Évolution 2">
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="testimonial-slide active" id="testimonial1">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <img src="https://via.placeholder.com/80x80" alt="Dr. Amadou Diallo" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Dr. Amadou Diallo</h4>
+                                <p class="text-gray-600">Operations Director, AgriGlobal Corp.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Benin Organics has transformed our organic soybean oil supply chain. Their 60,000 t/year production capacity and USDA/EU certifications ensure unparalleled quality and quantity for our European and North American markets. An indispensable strategic partner."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide" id="testimonial2">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <img src="https://via.placeholder.com/80x80" alt="Sarah Chen" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Sarah Chen</h4>
+                                <p class="text-gray-600">Raw Materials Purchasing Manager, NutriHealth Ltd.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Benin Organics' comprehensive traceability and commitment to 25,000 local farmers perfectly align with our values. We are proud to integrate their high-quality organic meal into our formulations."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide" id="testimonial3">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <img src="https://via.placeholder.com/80x80" alt="David Miller" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">David Miller</h4>
+                                <p class="text-gray-600">Senior Analyst, Green Ventures Capital</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Our investment in Benin Organics has been a success. Their business model, combining social impact with leadership in African organic soy processing, demonstrates exceptional growth potential and exemplary management."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide" id="testimonial4">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <img src="https://via.placeholder.com/80x80" alt="Emily White" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Emily White</h4>
+                                <p class="text-gray-600">Logistics Director, Global Food Solutions</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">
+                            "Benin Organics' location within the GDIZ offers a major logistical advantage. Their reliable delivery times and compliance with export standards greatly simplify our international operations."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button class="testimonial-nav w-3 h-3 rounded-full bg-green-300 focus:outline-none active" data-slide="testimonial1"></button>
+                    <button class="testimonial-nav w-3 h-3 rounded-full bg-green-300 focus:outline-none" data-slide="testimonial2"></button>
+                    <button class="testimonial-nav w-3 h-3 rounded-full bg-green-300 focus:outline-none" data-slide="testimonial3"></button>
+                    <button class="testimonial-nav w-3 h-3 rounded-full bg-green-300 focus:outline-none" data-slide="testimonial4"></button>
+                </div>
             </div>
-          </div>
         </div>
-        
-        <!-- Deuxième page avec deux images -->
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-3.png" class="d-block w-100 carousel-img" alt="Évolution 3">
+    </section>
+
+    <!-- Stats Section 2 -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Key Figures: Proof of Our Commitment and Success.</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    These statistics reflect our impact, operational efficiency, and ongoing commitment to excellence.
+                </p>
             </div>
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-4.png" class="d-block w-100 carousel-img" alt="Évolution 4">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-green-600 mb-2">25K+</div>
+                    <h3 class="font-semibold mb-2">Farmer Partners</h3>
+                    <p class="text-gray-600 text-sm">An extensive network of farmers for consistent and high-quality supply.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-green-600 mb-2">60K</div>
+                    <h3 class="font-semibold mb-2">Tons/Year Capacity</h3>
+                    <p class="text-gray-600 text-sm">Our state-of-the-art industrial capacity ensures significant volume for global markets.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-green-600 mb-2">100%</div>
+                    <h3 class="font-semibold mb-2">International Certifications</h3>
+                    <p class="text-gray-600 text-sm">Total commitment to USDA Organic, EU Organic standards, and export regulations.</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-green-600 mb-2">GDIZ</div>
+                    <h3 class="font-semibold mb-2">Strategic Location</h3>
+                    <p class="text-gray-600 text-sm">Optimal location in Benin for smooth and efficient export logistics.</p>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Troisième page avec deux images -->
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-5.png" class="d-block w-100 carousel-img" alt="Évolution 5">
+    <!-- Services Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Our Solutions for Professionals and Investors.</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Benin Organics offers a range of key services designed to meet the specific needs of our B2B partners and international investors.
+                </p>
             </div>
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-6.png" class="d-block w-100 carousel-img" alt="Évolution 6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-leaf text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Certified Organic Soybean Supply</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        We provide the highest quality organic soybeans, cultivated using sustainable and certified methods, for your industrial needs.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="text-green-600 font-semibold hover:underline">Learn More about Our B2B Supply</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-box-open text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Organic Soybean Oil & Meal</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Discover our premium finished products: organic virgin soybean oil and organic soybean meal, ideal for agri-food, animal feed, and cosmetics.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="text-green-600 font-semibold hover:underline">Explore Our Product Range</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-truck text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Export Logistics & Traceability</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Thanks to our location in GDIZ, we ensure smooth export logistics and a fully traceable supply chain for your international orders.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="text-green-600 font-semibold hover:underline">Optimize Your Logistics with Us</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-100 w-14 h-14 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-handshake text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Investment Opportunities</h3>
+                    <p class="text-gray-600 text-center mb-4">
+                        Explore partnership and investment possibilities in a rapidly growing sector, with a key player in African organic agriculture.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="text-green-600 font-semibold hover:underline">Become a Partner / Invest</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-
-                <div class="carousel-item">
-          <div class="row">
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-5.png" class="d-block w-100 carousel-img" alt="Évolution 5">
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions: Your Queries, Our Answers.</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Find answers to the most common questions from our industrial partners, distributors, and investors here.
+                </p>
             </div>
-            <div class="col-6">
-              <img src="assets/img/evolution/evolution-6.png" class="d-block w-100 carousel-img" alt="Évolution 6">
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="accordion-item mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-semibold text-lg focus:outline-none">
+                        <span>What are the certification standards for your organic soybean products?</span>
+                        <i class="fas fa-plus text-green-600"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 mt-2">
+                            Our soybean products are USDA Organic and EU Organic certified, ensuring strict compliance with international organic production standards.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-semibold text-lg focus:outline-none">
+                        <span>What are the benefits of your organic soybean products for B2B clients?</span>
+                        <i class="fas fa-plus text-green-600"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 mt-2">
+                            Our products offer superior quality, GMO- and pesticide-free purity, comprehensive traceability, and meet growing consumer demand for healthy and sustainable ingredients, thereby strengthening your own customers' trust.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-semibold text-lg focus:outline-none">
+                        <span>How can I get a quote or place a bulk order?</span>
+                        <i class="fas fa-plus text-green-600"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 mt-2">
+                            For a personalized quote or bulk order, please contact us via our online form, email, or phone. Our sales team will assist you.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-semibold text-lg focus:outline-none">
+                        <span>What is your range of organic soybean products?</span>
+                        <i class="fas fa-plus text-green-600"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 mt-2">
+                            We primarily produce organic virgin soybean oil and organic soybean meal, intended for various industrial applications (food, animal feed, cosmetics).
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item mb-4 border-b border-gray-200 pb-4">
+                    <button class="accordion-button flex justify-between items-center w-full text-left font-semibold text-lg focus:outline-none">
+                        <span>Do you handle international export and logistics?</span>
+                        <i class="fas fa-plus text-green-600"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="text-gray-600 mt-2">
+                            Yes, thanks to our strategic location in the GDIZ (Glo-Djigbé Industrial Zone), we have optimized logistics for global export of our products.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg inline-block transition duration-300">
+                        Have More Questions? Contact Us
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      
-      <!-- Contrôles du carrousel (précédent / suivant) -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Précédent</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Suivant</span>
-      </button>
-    </div>
-  </div>
-</section><!-- /Évolution Section -->
-
-<!-- CSS -->
-<style>
-  /* Appliquer une taille uniforme à toutes les images du carrousel */
-  .carousel-img {
-    object-fit: cover; /* Cette propriété permet d'ajuster l'image à la taille du conteneur */
-    height: 300px; /* Taille fixe pour les images */
-    width: 100%; /* L'image occupe toute la largeur de son conteneur */
-  }
-</style>
-
-<!-- Section des Témoignages -->
-<section id="testimonials" class="testimonials section light-background">
-
-  <!-- Titre de la section -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Témoignages</h2>
-    <p>Découvrez ce que nos clients disent de nous et comment nous avons contribué à leur succès.</p>
-  </div><!-- Fin du titre de la section -->
-
-  <div class="container">
-
-    <div class="row g-5">
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="testimonial-item">
-          <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-          <h3>Rejuste Wenoumi</h3>
-          <h4>PDG &amp; Fondateur</h4>
-          <div class="stars">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-          </div>
-          <p>
-            <i class="bi bi-quote quote-icon-left"></i>
-            <span>Grâce à leur expertise, notre entreprise a réussi à franchir de nouvelles étapes importantes. Leur équipe a transformé nos processus, ce qui nous a permis de doubler notre productivité.</span>
-            <i class="bi bi-quote quote-icon-right"></i>
-          </p>
-        </div>
-      </div><!-- Fin du témoignage -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="testimonial-item">
-          <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-          <h3>Rejuste Wenoumi</h3>
-          <h4>Designer</h4>
-          <div class="stars">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-          </div>
-          <p>
-            <i class="bi bi-quote quote-icon-left"></i>
-            <span>Leur approche créative et professionnelle nous a permis de créer des designs innovants qui ont capté l'attention de notre public cible. Ils sont un véritable atout pour notre équipe.</span>
-            <i class="bi bi-quote quote-icon-right"></i>
-          </p>
-        </div>
-      </div><!-- Fin du témoignage -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="testimonial-item">
-          <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-          <h3>Rejuste Wenoumi</h3>
-          <h4>Propriétaire de magasin</h4>
-          <div class="stars">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-          </div>
-          <p>
-            <i class="bi bi-quote quote-icon-left"></i>
-            <span>Travailler avec cette équipe a été un véritable plaisir. Leur compréhension des besoins du marché et leur capacité à s'adapter rapidement ont fait une grande différence pour mon entreprise.</span>
-            <i class="bi bi-quote quote-icon-right"></i>
-          </p>
-        </div>
-      </div><!-- Fin du témoignage -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="testimonial-item">
-          <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-          <h3>Rejuste Wenoumi</h3>
-          <h4>Freelance</h4>
-          <div class="stars">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-          </div>
-          <p>
-            <i class="bi bi-quote quote-icon-left"></i>
-            <span>Le service client est exceptionnel. Non seulement ils livrent des résultats de qualité, mais ils sont également extrêmement réactifs et toujours prêts à nous aider avec des solutions efficaces.</span>
-            <i class="bi bi-quote quote-icon-right"></i>
-          </p>
-        </div>
-      </div><!-- Fin du témoignage -->
-
-    </div>
-
-  </div>
-
-</section><!-- Fin de la section des Témoignages -->
-
-<!-- Section des Statistiques -->
-<section id="stats" class="stats section">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Clients</p>
-        </div>
-      </div><!-- Fin de l'élément des statistiques -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Projets</p>
-        </div>
-      </div><!-- Fin de l'élément des statistiques -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Heures de Support</p>
-        </div>
-      </div><!-- Fin de l'élément des statistiques -->
-
-      <div class="col-lg-3 col-md-6">
-        <div class="stats-item text-center w-100 h-100">
-          <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-          <p>Travailleurs</p>
-        </div>
-      </div><!-- Fin de l'élément des statistiques -->
-
-    </div>
-
-  </div>
-
-</section><!-- Fin de la section des Statistiques -->
-
-<section id="services" class="services section light-background">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Nos Services</h2>
-    <p>Des produits biologiques de qualité, cultivés dans le respect de l'environnement et de la santé humaine.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row g-4">
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-card d-flex">
-          <div class="icon flex-shrink-0">
-            <i class="bi bi-leaf"></i>
-          </div>
-          <div>
-            <h3>Cultures Durables</h3>
-            <p>Nous cultivons des produits biologiques selon des méthodes respectueuses de l'environnement, garantissant des récoltes saines et durables.</p>
-            <a href="service-details.html" class="read-more">En savoir plus <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div><!-- End Service Card -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-card d-flex">
-          <div class="icon flex-shrink-0">
-            <i class="bi bi-box"></i>
-          </div>
-          <div>
-            <h3>Vente de Produits Biologiques</h3>
-            <p>Nous proposons une large gamme de produits biologiques, allant des fruits et légumes frais aux produits transformés pour vos besoins quotidiens.</p>
-            <a href="service-details.html" class="read-more">En savoir plus <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div><!-- End Service Card -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-card d-flex">
-          <div class="icon flex-shrink-0">
-            <i class="bi bi-truck"></i>
-          </div>
-          <div>
-            <h3>Livraison à Domicile</h3>
-            <p>Profitez de la livraison de vos produits biologiques directement à votre domicile. Nous assurons une livraison rapide et fiable.</p>
-            <a href="service-details.html" class="read-more">En savoir plus <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div><!-- End Service Card -->
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-card d-flex">
-          <div class="icon flex-shrink-0">
-            <i class="bi bi-hand-thumbs-up"></i>
-          </div>
-          <div>
-            <h3>Conseils en Agriculture</h3>
-            <p>Nos experts vous offrent des conseils sur les meilleures pratiques agricoles pour maximiser la productivité tout en respectant la nature.</p>
-            <a href="service-details.html" class="read-more">En savoir plus <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div><!-- End Service Card -->
-
-    </div>
-
-  </div>
-
-</section><!-- /Services Section -->
-
-
-<!-- FAQ Section -->
-<section class="faq-9 faq section light-background" id="faq">
-
-  <div class="container">
-    <div class="row">
-
-      <div class="col-lg-5" data-aos="fade-up">
-        <h2 class="faq-title">Des questions ? Consultez notre FAQ</h2>
-        <p class="faq-description">Vous avez des questions sur nos produits ou services ? Nous avons les réponses dans notre FAQ.</p>
-        <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
-          <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 50.3039 155.128 48.1616C157.859 47.3381 160.581 47.5402 163.387 49.2081C165.387 50.5328 167.504 51.8079 169.539 53.0346C168.228 62.4159 176.265 69.8574 180.09 78.8327C190.514 112.5 162.057 149.06 159.823 179.136C163.592 179.073 171.84 173.062 171.297 165.645C175.007 151.357 186.327 142.276 191.156 128.823L191.308 128.731C179.292 142.367 168.411 155.651 157.47 169.982C151.986 175.46 145.804 180.824 139.214 184.722C126.267 191.307 117.406 208.246 118.554 189.093C118.971 168.263 118.517 145.072 122.082 126.322C122.345 123.113 121.23 119.528 118.578 116.502C110.797 101.01 107.204 85.8126 108.794 69.9088C113.777 56.2859 128.642 48.8286 140.57 49.0078C152.571 49.1651 162.596 55.2827 169.356 60.3244C181.288 72.2351 186.043 82.8091 193.509 92.2391C199.058 102.243 205.16 118.916 206.436 137.542C207.501 151.526 206.425 166.764 204.798 181.143C202.96 199.408 198.804 194.488 198.804 194.488Z" fill="#539D5C"/>
-          </svg>
-        </div>
-      </div>
-
-      <div class="col-lg-7" data-aos="fade-up">
-        <div class="accordion" id="accordionExample">
-          
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Qu'est-ce que l'agriculture biologique ?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                L'agriculture biologique est un mode de production agricole qui utilise des pratiques respectueuses de l'environnement, telles que l'absence de produits chimiques et de pesticides.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Pourquoi choisir des produits biologiques ?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Les produits biologiques sont plus sains pour vous et l'environnement, car ils sont cultivés sans produits chimiques et utilisent des pratiques agricoles durables.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Comment puis-je commander des produits ?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Vous pouvez commander des produits directement sur notre site web, en choisissant les articles que vous souhaitez et en procédant au paiement en ligne.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Quels types de produits proposez-vous ?
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Nous proposons une large gamme de produits biologiques, y compris des fruits, légumes, herbes, et produits transformés comme des confitures et des jus.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Offrez-vous des livraisons internationales ?
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Actuellement, nous proposons uniquement des livraisons au niveau national, mais nous travaillons sur des options internationales dans le futur.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Comment puis-je suivre ma commande ?
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Vous recevrez un numéro de suivi par email une fois votre commande expédiée, que vous pourrez utiliser pour suivre l'état de la livraison.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingSeven">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                Proposez-vous des produits sans gluten ?
-              </button>
-            </h2>
-            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Oui, nous proposons une sélection de produits biologiques sans gluten. Consultez notre catégorie dédiée pour plus d'options.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEight">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                Vos produits sont-ils certifiés bio ?
-              </button>
-            </h2>
-            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Oui, tous nos produits sont certifiés biologiques et respectent les normes en vigueur pour garantir leur qualité.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingNine">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                Puis-je retourner mes produits ?
-              </button>
-            </h2>
-            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Oui, vous pouvez retourner vos produits dans un délai de 30 jours après réception, à condition qu'ils soient dans leur état d'origine.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTen">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                Offrez-vous des remises pour les achats en gros ?
-              </button>
-            </h2>
-            <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Oui, nous proposons des remises pour les commandes en gros. N'hésitez pas à nous contacter pour obtenir un devis personnalisé.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingEleven">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                Où sont situées vos fermes ?
-              </button>
-            </h2>
-            <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Nos fermes sont situées dans différentes régions du pays. Nous travaillons avec des agriculteurs locaux pour garantir des produits de qualité.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwelve">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                Proposez-vous des services de conseil en agriculture ?
-              </button>
-            </h2>
-            <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Oui, nous proposons des services de conseil pour les agriculteurs qui souhaitent passer à l'agriculture biologique.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThirteen">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                Comment vos produits sont-ils stockés ?
-              </button>
-            </h2>
-            <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Nos produits sont stockés dans des conditions optimales pour garantir leur fraîcheur et leur qualité, conformément aux normes de stockage biologique.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFourteen">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                Avez-vous une politique de durabilité ?
-              </button>
-            </h2>
-            <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Oui, nous nous engageons à utiliser des pratiques durables pour minimiser notre impact environnemental, en utilisant des emballages recyclables et en réduisant les déchets.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFifteen">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                Comment puis-je m'abonner à votre newsletter ?
-              </button>
-            </h2>
-            <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                Vous pouvez vous abonner à notre newsletter en entrant votre adresse email dans le formulaire situé en bas de notre page d'accueil.
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section><!-- End FAQ Section -->
+    </section>
 
     <!-- Contact Section -->
-  <section id="contact" class="contact section light-background">
-
-      <!-- Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-    
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5">
-            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Informations de Contact</h3>
-              <p>Nous sommes là pour répondre à toutes vos questions et vous accompagner dans vos démarches. N'hésitez pas à nous contacter pour toute information complémentaire.</p>
-    
-              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="content">
-                  <h4>Notre Emplacement</h4>
-                  <p>GLO DJIGBE INDUSTRIAL ZONE</p>
-                  <p>ZE, Bénin</p>
-                </div>
-              </div>
-    
-              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-telephone"></i>
-                </div>
-                <div class="content">
-                  <h4>Numéro de Téléphone</h4>
-                  <p>+229 01 21 123 456</p>
-                  <p>+229 01 98 765 432</p>
-                </div>
-              </div>
-    
-              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-envelope"></i>
-                </div>
-                <div class="content">
-                  <h4>Adresse Email</h4>
-                  <p>contact@beninorganics.com</p>
-                  <p>info@beninorganics.com</p>
-                </div>
-              </div>
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact Benin Organics: Your Gateway to African Organic Excellence.</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    Our dedicated team is ready to answer all your inquiries, whether for commercial partnerships, investment opportunities, or information about our certified products.
+                </p>
             </div>
-          </div>
-    
-          <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Contactez-Nous</h3>
-              <p>Nous serions heureux de vous aider ! Que vous soyez un partenaire, un client ou un passionné d'agriculture durable, n'hésitez pas à nous envoyer un message.</p>
-    
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="row gy-4">
-    
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Votre Nom" required="">
-                  </div>
-    
-                  <div class="col-md-6">
-                    <input type="email" class="form-control" name="email" placeholder="Votre Email" required="">
-                  </div>
-    
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Sujet" required="">
-                  </div>
-    
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Votre Message" required=""></textarea>
-                  </div>
-    
-                  <div class="col-12 text-center">
-                    <div class="loading">Chargement...</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Votre message a été envoyé avec succès. Merci !</div>
-    
-                    <button type="submit" class="btn">Envoyer le Message</button>
-                  </div>
-    
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                        <h3 class="text-xl font-bold mb-4">Head Office & Processing Plant</h3>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-map-marker-alt text-green-600 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-semibold">GLO DJIGBE INDUSTRIAL ZONE (GDIZ)</p>
+                                <p class="text-gray-600">Tori-Bossito Municipality, Benin</p>
+                            </div>
+                        </div>
+                        <div class="h-64 bg-gray-200 rounded-lg mb-4">
+                            <!-- Google Maps iframe would go here -->
+                            <img src="https://via.placeholder.com/600x300" alt="Map" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold mb-4">Sales & Partnerships Contact</h3>
+                            <div class="flex items-start mb-3">
+                                <i class="fas fa-phone text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium">+229 01 21 123 456</p>
+                                    <p class="text-sm text-gray-600">Sales Department</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start mb-3">
+                                <i class="fas fa-phone text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium">+229 01 98 765 432</p>
+                                    <p class="text-sm text-gray-600">Investor Relations</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fab fa-whatsapp text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium">+229 XX XX XX XX</p>
+                                    <p class="text-sm text-gray-600">WhatsApp Business</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md">
+                            <h3 class="text-lg font-bold mb-4">Electronic Addresses</h3>
+                            <div class="flex items-start mb-3">
+                                <i class="fas fa-envelope text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium">sales@beninorganics.com</p>
+                                    <p class="text-sm text-gray-600">Commercial Inquiries</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start mb-3">
+                                <i class="fas fa-envelope text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium">invest@beninorganics.com</p>
+                                    <p class="text-sm text-gray-600">Investment Opportunities</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="font-medium">info@beninorganics.com</p>
+                                    <p class="text-sm text-gray-600">General Information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </form>
-    
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-6">Information or Quote Request</h3>
+                        <p class="text-gray-600 mb-6">
+                            Fill out the form below and our team will get back to you shortly to discuss your specific needs for organic soybean products or your investment projects.
+                        </p>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                                <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                                    <option value="">Select a subject</option>
+                                    <option value="quote">Organic Soy Quote Request</option>
+                                    <option value="partnership">B2B Partnership</option>
+                                    <option value="investment">Investment Opportunity</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+                                Send Your Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
-          </div>
-    
         </div>
-    
-      </div>
-    
-  </section>
-  </main>
+    </section>
 
-  <footer id="footer" class="footer">
+    <!-- Newsletter Section -->
+    <section class="py-12 bg-green-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">Stay Informed About Benin Organics</h3>
+                    <p class="text-green-200">Subscribe to our professional newsletter for market insights and updates.</p>
+                </div>
+                <form class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                    <input type="email" placeholder="Your business email" class="px-4 py-2 rounded-lg text-gray-800 focus:outline-none w-full">
+                    <button type="submit" class="bg-white hover:bg-gray-100 text-green-800 font-bold py-2 px-6 rounded-lg transition duration-300 whitespace-nowrap">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Benin Organics</h4>
+                    <p class="text-gray-400">
+                        Africa's leading processor of USDA and EU certified organic soybeans, committed to quality, sustainability, and social impact.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition duration-300">Products</a></li>
+                        <li><a href="#impact" class="text-gray-400 hover:text-white transition duration-300">Impact</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Organic Soybean Oil</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Organic Soybean Meal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Bulk Orders</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Certifications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-500"></i>
+                            <span>GLO DJIGBE INDUSTRIAL ZONE (GDIZ), Tori-Bossito, Benin</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-3 text-green-500"></i>
+                            <span>+229 01 21 123 456</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-green-500"></i>
+                            <span>info@beninorganics.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Benin Organics. All rights reserved.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
 
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons and contents
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active', 'border-green-500', 'text-green-600'));
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active', 'border-green-500', 'text-green-600');
+                
+                // Show corresponding content
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Benin Organics</strong> <span>All Rights Reserved</span></p>
-      
-    </div>
+        // Testimonial slider
+        const testimonialNavs = document.querySelectorAll('.testimonial-nav');
+        testimonialNavs.forEach(nav => {
+            nav.addEventListener('click', function() {
+                // Remove active class from all navs and slides
+                document.querySelectorAll('.testimonial-nav').forEach(n => n.classList.remove('active', 'bg-green-600'));
+                document.querySelectorAll('.testimonial-slide').forEach(slide => slide.classList.remove('active'));
+                
+                // Add active class to clicked nav
+                this.classList.add('active', 'bg-green-600');
+                
+                // Show corresponding slide
+                const slideId = this.getAttribute('data-slide');
+                document.getElementById(slideId).classList.add('active');
+            });
+        });
 
-  </footer>
+        // Auto-rotate testimonials
+        let currentTestimonial = 1;
+        const totalTestimonials = 4;
+        
+        function rotateTestimonials() {
+            currentTestimonial = currentTestimonial % totalTestimonials + 1;
+            
+            // Remove active class from all navs and slides
+            document.querySelectorAll('.testimonial-nav').forEach(n => n.classList.remove('active', 'bg-green-600'));
+            document.querySelectorAll('.testimonial-slide').forEach(slide => slide.classList.remove('active'));
+            
+            // Add active class to current nav and slide
+            document.querySelector(`.testimonial-nav[data-slide="testimonial${currentTestimonial}"]`).classList.add('active', 'bg-green-600');
+            document.getElementById(`testimonial${currentTestimonial}`).classList.add('active');
+        }
+        
+        // Set interval for rotation (every 5 seconds)
+        setInterval(rotateTestimonials, 5000);
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        // Accordion functionality
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                // Toggle content
+                content.classList.toggle('active');
+                
+                // Toggle icon
+                if (content.classList.contains('active')) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-minus');
+                } else {
+                    icon.classList.remove('fa-minus');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        });
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
 </body>
-
 </html>
